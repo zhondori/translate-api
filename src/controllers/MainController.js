@@ -15,5 +15,22 @@ module.exports = {
                 message: err.message
             })
         }
+    },
+    async LangGET(req, res) {
+        try {
+            res.status(200).json({
+                ok: true,
+                languages: {
+                    ...translate.languages,
+                    isSupported: undefined,
+                    getCode: undefined
+                }
+            })
+        } catch (err) {
+            res.status(400).json({
+                ok: false,
+                message: err.message
+            })
+        }
     }
 }
