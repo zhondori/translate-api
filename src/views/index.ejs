@@ -1,18 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Free translation api for developers by Alisher Usmonov">
+    <meta name="og:title" content="Google Translate API">
+    <meta name="og:image" content="/static/images/translate.png">
     <title>GGTS API</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="shortcut icon" href="https://translate.google.com/favicon.ico" type="image/x-icon">
-</head>
-<body class="w-full h-screen bg-gradient-to-br from-teal-700 to-indigo-500">
-     <header>
-         <div class="container mx-auto">
-
-         </div>
-     </header>
-</body>
+    <link
+      rel="shortcut icon"
+      href="https://translate.google.com/favicon.ico"
+      type="image/x-icon"
+    />
+    <style type="text/tailwindcss">
+      .list-item {
+        @apply font-semibold text-[18px] text-white hover:text-gray-300;
+      }
+    </style>
+  </head>
+  <body class="w-full h-screen bg-gradient-to-l from-gray-600 to-gray-800">
+    <header class="h-[15%] w-full">
+      <div
+        class="container mx-auto px-2 md:px-0 h-full flex flex-row justify-between items-center"
+      >
+        <a href="/">
+          <img
+            src="https://translate.google.com/favicon.ico"
+            class="w-[60px]"
+            alt="google translate logo"
+          />
+        </a>
+        <ul class="flex gap-x-6 pr-3">
+          <li class="list-item">
+            <a href="https://documenter.getpostman.com/view/17847357/UVeMJ4FM" target="_blank" title="API docs guide">Docs</a>
+          </li>
+          <li class="list-item">
+            <a
+              href="https://github.com/Alisher-Usmonov/translate-api"
+              target="_blank"
+              title="Source Codes"
+              >GitHub</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section class="h-[85%] w-full">
+      <div
+        class="container mx-auto h-full grid md:grid-cols-2 md:grid-rows-1 grid-rows-2 grid-cols-1"
+      >
+        <div class="flex items-center justify-center">
+          <h1 class="text-6xl font-bold flex flex-col gap-y-2">
+            <p class="text-rose-700">Free<span class="text-white">.</span></p>
+            <p class="text-blue-800">Fast<span class="text-white">.</span></p>
+            <p class="text-emerald-700">
+              Good<span class="text-white">.</span>
+            </p>
+          </h1>
+        </div>
+        <div
+          class="flex flex-col items-center text-center md:text-left md:items-stretch justify-center text-white"
+        >
+          <h1 class="text-3xl mb-2">Google Translate API</h1>
+          <p class="text-2xl">
+            It's an API for developers. It's uses
+            <a
+              class="text-gray-300"
+              href="https://npmjs.com/package/@vitalets/google-translate-api"
+              target="_blank"
+              rel="noopener noreferrer"
+              >@vitalets/google-translate-api</a
+            >.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
